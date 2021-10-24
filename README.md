@@ -24,20 +24,20 @@ $ sudo apt-get install gawk wget git-core diffstat unzip texinfo gcc-multilib bu
 Clone this repository onto your Linux build machine:
 
 ```bash
-$ git clone git@github.com:peteasa/parallella-yoctobuild
+$ git clone git@github.com:peteasa/parallella-yoctobuild --recurse-submodules
 $ cd parallella-yoctobuild
 ```
 
 Checkout the branch that provides the versions that you want to use:
 
 ```bash
-$ git checkout elink-redesign
+$ git checkout main
 ```
 
-To prepare the environment and download the necessary git submodules, you need to run the `initgitsubmodules.sh` script. This only needs to be done once:
+Make sure submodules are set up correctly
 
 ```bash
-$ source initgitsubmodules.sh
+$ git submodule update --init
 ```
 
 The result will be new folders `poky`, `meta-xilinx`, `meta-parallella`, `meta-epiphany` and `meta-exotic` created from specific commits on github.
