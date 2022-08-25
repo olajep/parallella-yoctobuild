@@ -6,4 +6,4 @@
 	url = https://github.com/olajep/meta-epiphany.git
 [submodule "meta-parallella"]
 	path = meta-parallella
-	url = https://github.com/peteasa/meta-parallella
+	url = https://github.com/olajep/meta-parallella
